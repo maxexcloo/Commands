@@ -1,0 +1,4 @@
+apt-get install pptpd
+/etc/init.d/pptpd restart
+nano /etc/ppp/pptpd-options
+nano /etc/pptpd.conf

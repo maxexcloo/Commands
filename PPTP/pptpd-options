@@ -1,0 +1,14 @@
+name pptpd
+refuse-pap
+refuse-chap
+refuse-mschap
+require-mschap-v2
+require-mppe-128
+
+lock
+nobsdcomp
+nodefaultroute
+proxyarp
+
+ms-dns 10.0.0.1
+nopersist

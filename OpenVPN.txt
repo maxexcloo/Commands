@@ -1,0 +1,14 @@
+apt-get install openvpn
+/etc/init.d/openvpn restart
+cp -R /usr/share/doc/openvpn/examples/easy-rsa/2.0/ /etc/openvpn/ca/
+cd /etc/openvpn/ca/
+. vars
+. clean-all
+. build-ca
+. build-key-server server
+. build-key client
+. build-dh
+cd /etc/openvpn/
+nano server.conf
+cd /etc/openvpn/ca/keys/
+cp ca.crt ca.key dh1024.pem server.crt server.key /etc/openvpn/
