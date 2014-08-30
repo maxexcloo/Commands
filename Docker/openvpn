@@ -1,0 +1,2 @@
+docker run --name="openvpn" -d --privileged -p 1194:1194/udp jpetazzo/openvpn
+docker run --name="openvpn-config" -it --rm=true --volumes-from="openvpn" -p 8080:8080 jpetazzo/openvpn serveconfig

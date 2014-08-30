@@ -1,0 +1,3 @@
+apt-get install dnsmasq
+nano /etc/dmsmasq.conf
+/etc/init.d/dnsmasq restart

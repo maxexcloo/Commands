@@ -1,14 +1,12 @@
-name pptpd
-refuse-pap
-refuse-chap
-refuse-mschap
-require-mschap-v2
-require-mppe-128
-
 lock
+ms-dns 10.0.0.1
+name pptpd
 nobsdcomp
 nodefaultroute
-proxyarp
-
-ms-dns 10.0.0.1
 nopersist
+proxyarp
+refuse-chap
+refuse-mschap
+refuse-pap
+require-mppe-128
+require-mschap-v2

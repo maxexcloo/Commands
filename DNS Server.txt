@@ -1,4 +1,0 @@
-apt-get install dnsmasq
-/etc/init.d/dnsmasq restart
-echo "bind-interfaces" > /etc/dnsmasq.conf
-echo "listen-address=127.0.0.1" >> /etc/dnsmasq.conf

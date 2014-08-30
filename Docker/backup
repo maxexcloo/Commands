@@ -1,0 +1,2 @@
+docker run --name="backup" --rm=true --volumes-from="" -v $(pwd):/backup busybox:latest tar cfvz /backup/backup.tar.gz /data
+docker run --name="restore" --rm=true --volumes-from="" -v $(pwd):/backup busybox:latest tar fvxz /backup/backup.tar.gz
